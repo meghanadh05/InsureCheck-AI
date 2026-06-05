@@ -26,6 +26,7 @@ class Settings(BaseSettings):
     groq_base_url: str = "https://api.groq.com/openai/v1"
     frontend_origin: str = "http://localhost:3000"
     upload_dir: Path = Path("./uploads")
+    runtime_dir: Path = Path("./runtime")
     policy_data_dir: Path = Path("app/data")
 
     base_dir: Path = Path(__file__).resolve().parent.parent
@@ -43,6 +44,26 @@ class Settings(BaseSettings):
     @property
     def resolved_upload_dir(self) -> Path:
         return Path(self.upload_dir)
+
+    @property
+    def resolved_runtime_dir(self) -> Path:
+        runtime_dir = Path(self.runtime_dir)
+        runtime_dir.mkdir(parents=True, exist_ok=True)
+        return runtime_dir
+
+    @property
+    def resolved_database_url(self) -> str:
+        if not self.database_url.startswith("sqlite:///"):
+            return self.database_url
+
+        raw_path = self.database_url.replace("sqlite:///", "", 1)
+        db_path = Path(raw_path)
+
+        if not db_path.is_absolute():
+            db_path = self.resolved_runtime_dir / db_path.name
+
+        db_path.parent.mkdir(parents=True, exist_ok=True)
+        return f"sqlite:///{db_path}"
 
     @property
     def cleaned_groq_api_key(self) -> str:
