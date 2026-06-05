@@ -9,7 +9,6 @@ const nav = [
   ["Claims", "/claims"],
   ["Test Cases", "/test-cases"],
   ["Dashboard", "/dashboard"],
-  ["Sample Docs", "/sample-documents"],
 ] as const;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
