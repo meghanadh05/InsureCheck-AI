@@ -1,7 +1,10 @@
+// NEXT_PUBLIC_API_URL  — required for all deployments (Vercel + browser)
+// API_URL_INTERNAL     — optional override for server-side only (Docker internal network)
+// Falls back: internal → public → localhost (local dev only)
 const PUBLIC_API_URL =
   process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api";
 const INTERNAL_API_URL =
-  process.env.API_URL_INTERNAL || "http://localhost:8000/api";
+  process.env.API_URL_INTERNAL || PUBLIC_API_URL;
 
 export const API_URL =
   typeof window === "undefined" ? INTERNAL_API_URL : PUBLIC_API_URL;
