@@ -1,0 +1,22 @@
+--------------------------------
+HealthPlus Pharmacy
+Drug License No: KA-BLR-DR-44881
+GST No: 29AAFPH9011M1Z4
+--------------------------------
+Bill No: HP-5581    Date: 04/11/2024
+
+Patient: Rajesh Kumar
+Doctor: Dr. Meera Sharma
+
+S.No | Medicine Name      | Batch | Exp   | Qty | MRP | Amount
+---------------------------------------------------------------
+1    | Paracetamol 650mg  | XX123 | 12/25 | 10  | 5   | 50
+2    | Vitamin C 500mg    | YY456 | 06/26 | 10  | 12  | 120
+
+                           Total: Rs 170
+                           GST: Rs 31
+                           Net Amount: Rs 201
+
+Pharmacist Signature
+Store Stamp
+--------------------------------

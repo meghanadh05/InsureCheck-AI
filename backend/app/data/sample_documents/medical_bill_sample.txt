@@ -1,0 +1,32 @@
+--------------------------------
+CityCare Outpatient Centre
+14 MG Road, Bengaluru
+GST No: 29AACCC1024K1Z7
+--------------------------------
+Bill No: CC-OPD-1042        Date: 04/11/2024
+
+Patient Details:
+Name: Rajesh Kumar
+Contact: +91-98765-44321
+Ref. By: Dr. Meera Sharma
+
+PARTICULARS               AMOUNT
+--------------------------------
+Consultation Fee          Rs 1000
+Diagnostic Tests:
+- Blood Test              Rs 300
+- Dengue Test             Rs 200
+Medicines                 Rs 170
+--------------------------------
+Sub Total:                Rs 1670
+GST (18%):                Rs 301
+--------------------------------
+TOTAL:                    Rs 1971
+Amount in Words: One Thousand Nine Hundred Seventy One Only
+
+Payment Mode: UPI
+Transaction ID: UPI1042BGLR
+
+Authorized Signatory
+Billing Desk Stamp
+--------------------------------

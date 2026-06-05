@@ -1,0 +1,25 @@
+--------------------------------
+Sunrise Diagnostics Lab
+NABL Accreditation No: NABL-20488
+--------------------------------
+Patient Name: Rajesh Kumar
+Age/Sex: 34 / Male
+Ref. By: Dr. Meera Sharma
+Date: 04/11/2024
+Report ID: SDL-8821
+
+TEST NAME                 RESULT      NORMAL RANGE
+-----------------------------------------------
+COMPLETE BLOOD COUNT (CBC)
+Hemoglobin                14.5        13-17 g/dL
+WBC Count                 7800        4000-11000
+Platelets                 250000      150000-450000
+
+LIVER FUNCTION TEST
+SGPT                      35          10-40 U/L
+SGOT                      30          10-40 U/L
+
+Remarks: Viral fever suspected. Correlate clinically.
+Pathologist: Dr. Anita Rao
+Digital Signature Verified
+--------------------------------

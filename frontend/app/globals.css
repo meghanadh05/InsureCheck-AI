@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: #f8efe8;
+  --surface: rgba(255, 251, 248, 0.92);
+  --surface-soft: rgba(247, 234, 227, 0.74);
+  --ink: #251a33;
+  --muted: #7d6f84;
+  --plum: #5e2b63;
+  --plum-dark: #3d1f45;
+  --peach: #f6c7b8;
+  --lavender: #e9dbf5;
+  --sand: #f3dfca;
+  --success: #5b8a69;
+  --warning: #d18a4f;
+  --danger: #c56f72;
+}
+
+body {
+  @apply text-ink font-body;
+  background-color: var(--background);
+  background-image:
+    radial-gradient(circle at top left, rgba(246, 199, 184, 0.45), transparent 32%),
+    radial-gradient(circle at top right, rgba(233, 219, 245, 0.6), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(243, 223, 202, 0.55), transparent 30%);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(28, 28, 28, 0.18) transparent;
+}
+
+::selection {
+  background: rgba(43, 100, 92, 0.18);
+}
+
+.panel {
+  @apply rounded-[30px] border shadow-panel backdrop-blur;
+  background: var(--surface);
+  border-color: rgba(94, 43, 99, 0.1);
+}
+
+.soft-panel {
+  @apply rounded-[28px] border backdrop-blur;
+  background: var(--surface-soft);
+  border-color: rgba(94, 43, 99, 0.08);
+}
+
+.section-shell {
+  @apply relative overflow-hidden rounded-[36px] px-6 py-8 md:px-10 md:py-10;
+}
+
+.eyebrow {
+  color: rgba(37, 26, 51, 0.68);
+  @apply text-xs font-medium uppercase tracking-[0.26em];
+}
+
+.hero-title {
+  @apply font-display text-[2.35rem] leading-[1] sm:text-[2.75rem] md:text-[4rem];
+}
+
+.primary-button {
+  @apply inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90;
+  background: linear-gradient(135deg, var(--plum), var(--plum-dark));
+}
+
+.secondary-button {
+  @apply inline-flex items-center justify-center rounded-full border px-5 py-3 text-sm font-semibold transition hover:bg-white;
+  border-color: rgba(94, 43, 99, 0.12);
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--ink);
+}
+
+.status-badge {
+  @apply inline-flex min-h-7 items-center rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wide;
+}
+
+.plum-gradient {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.16), transparent 30%),
+    linear-gradient(135deg, var(--plum-dark), var(--plum));
+}
+
+.floating-card {
+  @apply rounded-[24px] border backdrop-blur;
+  background: rgba(255, 251, 248, 0.82);
+  border-color: rgba(94, 43, 99, 0.1);
+}
+
+.decor-orb {
+  @apply pointer-events-none absolute rounded-full blur-3xl;
+}

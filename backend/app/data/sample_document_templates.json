@@ -1,0 +1,24 @@
+{
+  "sample_documents": [
+    {
+      "document_type": "prescription",
+      "title": "Sample prescription text",
+      "content": "Dr. Meera Sharma Reg No KA/45678/2015. Date 04/11/2024. Patient Name Rajesh Kumar. Diagnosis viral fever. Rx Paracetamol 650mg and Vitamin C. Investigations advised CBC and Dengue test."
+    },
+    {
+      "document_type": "medical_bill",
+      "title": "Sample clinic bill text",
+      "content": "CityCare Clinic Bill No 1042. Date 04/11/2024. Patient Rajesh Kumar. Consultation Fee 1000. Diagnostic Tests 500. Total 1500. Payment mode UPI."
+    },
+    {
+      "document_type": "diagnostic_report",
+      "title": "Sample diagnostic report text",
+      "content": "Sunrise Diagnostics Report ID 8821. Patient Rajesh Kumar. Date 04/11/2024. Test Complete Blood Count. Hemoglobin 14.5. WBC 7800. Platelets 250000. Remarks Viral fever suspected."
+    },
+    {
+      "document_type": "pharmacy_bill",
+      "title": "Sample pharmacy bill text",
+      "content": "HealthPlus Pharmacy Bill No 5581. Date 04/11/2024. Patient Rajesh Kumar. Paracetamol 650mg Qty 10 Amount 50. Vitamin C Qty 10 Amount 120. Net Amount 170."
+    }
+  ]
+}
